@@ -1,0 +1,79 @@
+.carousel
+{
+    position: relative;
+}
+
+.carousel-item 
+{
+    position: relative;
+    width: 100%;
+    height: 70vh;
+}
+
+.carousel-item img{
+    z-index: 2;
+    opacity: .9;
+    object-fit: cover;
+}
+
+.carousel-item-info {
+    z-index: 1;
+    position: absolute;
+    top: 50%;left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.carousel-item-info h1{
+    text-transform: uppercase;
+    margin: 1rem 0;
+    color: #0d6efd;
+    animation: moveH1 2s ease 1;
+}
+.carousel-item-info p{
+    text-transform: capitalize;
+    font-size: 20px;
+    color: black;
+    animation: moveP 2s ease 1;
+}
+
+.carousel-item-info button
+{
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 10px 30px;
+    outline: none;
+    border: 1px solid #0d6efd;
+    background: none;
+    color: black;
+    border-radius: 4px;
+    transition: all .2s ease-in-out;
+    animation: scaleButton 2s ease 1;
+}
+
+@keyframes moveH1 {
+    0% {
+      transform: translateY(20px); /* Начално положение */
+    }
+    100% {
+      transform: translateY(0); /* Крайно положение */
+    }
+}
+@keyframes moveP {
+    0% {
+      transform: translateY(35px); /* Начално положение */
+    }
+    100% {
+      transform: translateY(0); /* Крайно положение */
+    }
+}
+
+@keyframes scaleButton {
+    0% {
+      transform: scale(.5); /* Начално положение */
+    }
+    100% {
+      transform: scale(1); /* Крайно положение */
+    }
+}
+
+

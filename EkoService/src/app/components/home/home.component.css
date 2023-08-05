@@ -1,0 +1,48 @@
+.btn-theme{
+    background: rgb(255, 145, 0);
+    border: 1px solid rgb(255, 145, 0);
+    text-transform: capitalize;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.btn-theme:hover{
+    background:#0d6efd;
+    color: rgb(255, 145, 0);
+}
+
+.title h1{padding: 20px 0; text-transform: uppercase; font-weight: 300; letter-spacing: 1px;}
+.title span{border-bottom: 3px solid #0d6efd;}
+.title p{letter-spacing: 1px; line-height: 2rem;}
+.chouse-box-info i{font-size: 4rem; color: #0d6efd; padding: 20px 0;}
+.chouse-box-info h4{text-transform: uppercase; letter-spacing: 1px;}
+.chouse-box-info p{letter-spacing: 1px; line-height: 1.8rem; text-align: center; padding: 15px 0;}
+
+.serviced-box-info div{display: flex; align-items: center;}
+.serviced-box-info i {font-size: 1.5rem; color: #0d6efd; padding: 0 10px;}
+
+.overview-box{position: relative;}
+
+.overview-info{
+    width: 90%;
+    height: 80%;
+    top: 10%;left: 5%;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.763);
+    visibility: hidden;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .2s ease-in-out;
+}
+
+.overview-box:hover .overview-info{
+    visibility: visible;
+}
+
+.overview-info h5{text-transform: capitalize; padding: 10px 0;}

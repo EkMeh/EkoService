@@ -1,0 +1,41 @@
+<div class="d-flex flex-column align-items-center">
+    <div class="header-top container-fluid d-flex justify-content-around">
+        <div class="left-content d-flex align-items-center justify-content-center">
+            <div class="p-2 contact-box d-flex align-items-center">
+                <span class="px-2"><i class="fa-solid fa-phone"></i></span>
+                <a href="tel:+### ### ### ###">+### ### ### ###</a>
+            </div>
+            <div class="p-2 contact-box d-flex align-items-center">
+                <span class="px-2"><i class="fa-solid fa-envelope"></i></span>
+                <a href="mailto:ekoservice@gmail.com">ekoservice@gmail.com</a>
+            </div>
+            <div class="p-2 contact-box d-flex align-items-center">
+                <span class="px-2"><i class="fa-regular fa-clock"></i></span>
+                <span>Mon-Fri: 9:00 am - 7:00 pm</span>
+            </div>
+        </div>
+        <div class="right-content d-flex align-items-center justify-content-center">
+            <div class="p-2 px-3 social-box"><a href=""><i class="fa-brands fa-facebook-f"></i></a></div>
+            <div class="p-2 px-3 social-box"><a href=""><i class="fa-brands fa-twitter"></i></a></div>
+            <div class="p-2 px-3 social-box"><a href=""><i class="fa-brands fa-pinterest"></i></a></div>
+            <div class="p-2 px-3 social-box"><i class="fa-solid fa-cart-shopping"></i></div>
+            <div class="p-2 px-3 social-box search-box"><i class="fa-solid fa-magnifying-glass"></i></div>
+        </div>
+    </div>
+    <div class="header-bottom p-4 container-fluid flex-row d-flex justify-content-around">
+        <div class="brand text-primary w-10 d-flex flex-row align-items-center"><a href="/home"><span class="text-capitalize">eko</span><span class="text-capitalize">service</span></a></div>
+        <div class="menu d-flex flex-row align-items-center justify-content-around">
+            <a *ngFor="let item of navItems" class="px-2 text-capitalize"
+            [routerLink]="'/'+ item.navItem"
+            [ngStyle]="{ color: (item.navItem === 'home' && useDefaultActive) || (item.navItem === activeMenuItem && !useDefaultActive) ? '#0d6efd' : 'black' }"
+            [class.active]="item.navItem === activeMenuItem"
+            (click)="navMove(item.navItem)"
+            (mouseenter)="onHover($event)"
+            (mouseleave)="onLeave($event)">{{item.navItem}}</a>
+        </div>
+    </div>
+</div>
+
+
+
+

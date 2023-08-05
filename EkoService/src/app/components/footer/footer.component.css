@@ -1,0 +1,21 @@
+.footer div h3 {text-transform: capitalize; padding: 20px 0;}
+.footer div h3 span {border-bottom: 2px solid #0d6efd;}
+
+.btn-theme{
+    background: rgb(255, 145, 0);
+    border: 1px solid rgb(255, 145, 0);
+    text-transform: capitalize;
+    padding: 3px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: white;
+    transition: all .2s ease-in-out;
+}
+
+.btn-theme:hover{
+    background:#0d6efd;
+    color: rgb(255, 145, 0);
+}
+
+.footer ul li {list-style: none; margin: .5rem 0; text-transform: capitalize;}
+.footer ul li span{margin:0 .5rem;}

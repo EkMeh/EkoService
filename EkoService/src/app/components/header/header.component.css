@@ -1,0 +1,13 @@
+.header-top{background: #efeded;border-bottom: 1px solid #a8a6a6;}
+.contact-box, .social-box {border-left: 1px solid #a8a6a6; color: #a8a6a6;}
+.contact-box a, .social-box a{text-decoration: none; color: #a8a6a6; transition: all .2s ease-in-out;}
+.social-box a:hover{color: black;}
+.social-box i{ color: #a8a6a6; transition: all .2s ease-in-out;cursor: pointer;}
+.social-box i:hover{color: black;}
+.contact-box a:hover{text-decoration: underline;}
+.contact-box:last-child, .social-box:last-child{border-right: 1px solid #a8a6a6;}
+.brand a{display: flex; text-decoration: none;}
+.brand a span {font-size:2.5rem; font-weight: bolder; letter-spacing: 1px;}
+.header-bottom {background: #efefee;}
+.menu a{color:black; font-size: 20px; font-weight: 500; letter-spacing: 0.2px;} 
+
