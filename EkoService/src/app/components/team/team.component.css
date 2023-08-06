@@ -1,0 +1,63 @@
+.team-box{
+    position: relative;
+}
+.social-box{
+    display: none;
+    position: absolute;
+    bottom: 10%;
+}
+
+.social-box a{
+    padding: 10px 15px;
+    transition: all .3s ease-in-out;
+    background: white;
+}
+
+.social-box a:hover{
+    background: #0d6efd;
+}
+
+.social-box a i{
+    color: #6c757d;;
+    transition: all .3s ease-in-out;
+}
+
+
+.social-box a:hover i{
+    color: white;
+}
+
+.team-box:hover .social-box{
+    display: flex;
+    animation: move 1s ease 1;
+ }
+
+.team-info p{padding: 10px 0;}
+
+.team-info span {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #0d6efd;
+}
+
+@keyframes move {
+    0% {
+      transform: translateY(20px); /* Начално положение */
+    }
+    100% {
+      transform: translateY(0); /* Крайно положение */
+    }
+}
+
+.progress-container {
+  width: 75%;
+  height: 20px;
+  background-color: white;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background:rgb(255, 145, 0);
+}
