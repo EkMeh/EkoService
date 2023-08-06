@@ -15,6 +15,7 @@ import { ShopComponent } from './components/shop/shop.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { HomeSlideBarComponent } from './components/home/home-slide-bar/home-slide-bar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CurrentTemplateUrlComponent } from './components/current-template-url/current-template-url.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { FooterComponent } from './components/footer/footer.component';
     ContactComponent,
     HomeSlideBarComponent,
     FooterComponent,
+    CurrentTemplateUrlComponent,
   ],
   imports: [
     BrowserModule,

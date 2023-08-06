@@ -1,0 +1,10 @@
+<div class="container-fluid template-title py-2 my-5">
+    <div class="row d-flex  align-items-center justify-content-sm-evenly">
+        <div class="col-12 col-sm-6">
+            <h2 class="text-capitalize text-center text-primary">{{currentUrl}} template</h2>
+        </div>
+        <div class="col-12 col-sm-6">
+            <p class="text-capitalize text-center">you are here: <a href="/home">home</a> / <a [routerLink]="'/' + currentUrl">{{currentUrl}}</a></p>
+        </div>
+    </div>
+</div>
