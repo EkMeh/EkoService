@@ -8,6 +8,8 @@ import { Router, NavigationEnd } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
 
+  
+  activeIsMenu:boolean=false;
   navItems = [
     { navItem: 'home' },
     { navItem: 'services' },
@@ -56,5 +58,9 @@ export class HeaderComponent implements OnInit {
     const activeItem = parts[1] || 'home';
     this.activeMenuItem = activeItem;
     this.useDefaultActive = activeItem === 'home';
+  }
+
+  activeHamburgerMenu(){
+    this.activeIsMenu=!this.activeIsMenu
   }
 }

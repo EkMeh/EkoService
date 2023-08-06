@@ -11,3 +11,8 @@
 .header-bottom {background: #efefee;}
 .menu a{color:black; font-size: 20px; font-weight: 500; letter-spacing: 0.2px;} 
 
+.menu-hamburger i{
+    font-size: 30px;
+    color: #0d6efd;
+}
+
